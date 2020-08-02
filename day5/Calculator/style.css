@@ -1,0 +1,30 @@
+body
+{
+    background-color: black;
+}
+.container
+{
+    height: 700px;
+    width: 450px;
+}
+.col-sm
+{
+    border: 10px;
+    padding-bottom: 100px;
+    background: #ffffff;
+}
+.Display
+{
+    background-color: purple;
+    height: 100px;
+    width: 100%;
+}
+.button
+{
+    width: 80px;
+}
+.resultButton
+{
+    width: 80px;
+    background-color: lightgreen;
+}
