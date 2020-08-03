@@ -1,4 +1,4 @@
 var x,y;
-function getValue(x,y) {
+function getButtonValue(x,y) {
     console.log("bok")
 }
