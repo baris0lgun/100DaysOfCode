@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <link rel="stylesheet" href="Bootstrap/bootstrap-4.5.0-dist/css/bootstrap-grid.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Calculator</title>
+</head>
+
+
+<body>
+  <p id="its10">asd</p>
+
+  <div class="container">
+    <div class="display">
+      <div>
+        <input id="display" type="number" value="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <div class="button"><button type="button" class="button" onclick="clean()">
+            <h1 style="color: chartreuse;">C</h1>
+          </button></div>
+      </div>
+      <div class="col-sm">
+        <div class="button"><button type="button" class="button" value="specialChart" onclick="specialChart">
+            <h1 style="color: chartreuse;">()</h1>
+          </button></div>
+      </div>
+      <div class="col-sm">
+        <div class="button"><button type="button" class="button" value="specialChart" onclick="specialChart">
+            <h1 style="color: chartreuse;">%</h1>
+          </button></div>
+      </div>
+      <div class="col-sm">
+        <div class="button"><button type="button" class="button" value="divide" onclick="selectOperation('divide')">
+            <h1 style="color: chartreuse;">/</h1>
+          </button></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <div class="button"><button type="button" class="button" value="7" id="seven" onclick="entry(7)">
+            <h1>7</h1>
+          </button></div>
+      </div>
+      <div class="col-sm">
+        <div class="button"><button type="button" class="button" value="8" onclick="entry(8)" id="number">
+            <h1>8</h1>
+          </button></div>
+      </div>
+      <div class="col-sm">
+        <div class="button"><button type="button" class="button" value="9" onclick="entry(9)" id="number">
+            <h1>9</h1>
+          </button></div>
+      </div>
+      <div class="col-sm">
+        <div class="button"><button type="button" class="button" value="multiplier"
+            onclick="selectOperation('multiplier')">
+            <h1 style="color: chartreuse;">X</h1>
+          </button></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <div class="button"><button type="button" class="button" value="4" onclick="entry(4)" id="number">
+            <h1>4</h1>
+          </button></div>
+      </div>
+      <div class="col-sm">
+        <div class="button"><button type="button" class="button" onclick="entry(5)" value="5" id="number">
+            <h1>5</h1>
+          </button></div>
+      </div>
+      <div class="col-sm">
+        <div class="button"><button type="button" class="button" onclick="entry(6)" value="6" id="number">
+            <h1>6</h1>
+          </button></div>
+      </div>
+      <div class="col-sm">
+        <div class="button"><button type="button" class="button" value="minus" onclick="selectOperation('minus')">
+            <h1 style="color: chartreuse;">-</h1>
+          </button></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <div class="button"><button type="button" class="button" onclick="entry(1)" value="1" id="number">
+            <h1>1</h1>
+          </button></div>
+      </div>
+      <div class="col-sm">
+        <div class="button"><button type="button" class="button" onclick="entry(2)" value="2" id="number">
+            <h1>2</h1>
+          </button></div>
+      </div>
+      <div class="col-sm">
+        <div class="button"><button type="button" class="button" onclick="entry(3)" value="3" id="number">
+            <h1>3</h1>
+          </button></div>
+      </div>
+      <div class="col-sm">
+        <div class="button"><button type="button" class="button" value="total" onclick="selectOperation('total')">
+            <h1 style="color: chartreuse;">+</h1>
+          </button></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <div class="button"><button type="button" class="button" value="specialChart" onclick="specialvalue">
+            <h1 style="color: chartreuse;">?</h1>
+          </button></div>
+      </div>
+      <div class="col-sm">
+        <div class="button"><button type="button" class="button" onclick="entry(0)" value="0" id="number">
+            <h1>0</h1>
+          </button></div>
+      </div>
+      <div class="col-sm">
+        <div class="button"><button type="button" class="button" value="specialChart" onclick="specialChart">
+            <h1 style="color: chartreuse">.</h1>
+          </button></div>
+      </div>
+      <div class="col-sm">
+        <div class="button"><button type="button" class="resultButton" style="color: chartreuse;" onclick="calculate()">
+            <h1>=</h1>
+          </button></div>
+      </div>
+    </div>
+  </div>
+</body>
+<footer>
+  <script src="index.js"></script>
+</footer>
+
+</html>
