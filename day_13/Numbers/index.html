@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <title>Key press events</title>
+    <script>
+        window.addEventListener('keydown', checkKeyPress, false);
+        window.addEventListener('keyup', checkKeyPress, false)
+        // The parameters of the event listener are event, function to run, useCapture (optional).
+        // This event listener runs checkKeyPress function when a key is pressed down
+        // You can use keydown or keyup to check what key has been pressed or released
+
+
+        // this function checks to see if the letter 'a' key has been pressed
+        function checkKeyPress(key) {
+
+            let strategy = key.type;
+
+            if (strategy === 'keydown') {
+                if (key.keyCode == '65') {
+                    console.log("keyCode ", key.keyCode, strategy)
+                }
+                if (key.keyCode == '66') {
+                    console.log("keyCode ", key.keyCode, strategy)
+                }
+                if (key.keyCode == '67') {
+                    console.log("keyCode ", key.keyCode, strategy)
+                }
+                if (key.keyCode == '68') {
+                    console.log("keyCode ", key.keyCode, strategy)
+                }
+                if (key.keyCode == '69') {
+                    console.log("keyCode ", key.keyCode, strategy)
+                }
+            }
+
+            if (strategy === 'keyup') {
+                if (key.keyCode == '65') {
+                    console.log("keyCode ", key.keyCode, strategy)
+                }
+                if (key.keyCode == '66') {
+                    console.log("keyCode ", key.keyCode, strategy)
+                }
+                if (key.keyCode == '67') {
+                    console.log("keyCode ", key.keyCode, strategy)
+                }
+                if (key.keyCode == '68') {
+                    console.log("keyCode ", key.keyCode, strategy)
+                }
+                if (key.keyCode == '69') {
+                    console.log("keyCode ", key.keyCode, strategy)
+                }
+
+            }
+            
+            // if (key.type == 'keydown' && key.keyCode == '66') {
+            //     console.log(key.type);
+            //     // 65 is the keycode that is returned when the 'a' letter key is pressed
+            //     // if you use keypress event instead of keydown/up then you must use ASCII code instead of keycode
+            // } else if (key.type == 'keyup' && key.keyCode == '66') {
+            //     console.log(key.type)
+            // }
+            //  else if(key.keyCode == '144') {
+            //      alert('numlock') 
+            //  }else if(key.keyCode == '111') {
+            //      alert('forwardSlash') 
+            //  }else if (key.keyCode == '106') {
+            //      alert('wildcard');
+            //  }
+            //  console.log(key.keyCode)
+        }
+    </script>
+</head>
+
+<body>
+    <p>Press the 'a' key to see the alert message<p>
+</body>
+
+</html>
