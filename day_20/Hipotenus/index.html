@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>querry</title>
+</head>
+
+<body>
+
+
+    <div class="container" style="height: 100vh; display: grid; grid-template-rows: 2fr 2fr;">
+
+        <div id="display" style="background-color: black;">
+            <div id="output"
+                style=" font-size: 2rem; text-align: center; background-color: gray; position: relative; top: 200px;">
+            </div>
+        </div>
+        <div id="number-key"
+            style=" display: grid; grid-template-rows: repeat(4, 1fr); grid-template-columns: repeat(4, 1fr); background-color: black;">
+            <button onclick="calculateHupo()">Calculate</button>
+            <button class="key">1</button>
+            <button class="key">2</button>
+            <button class="key">3</button>
+            <button class="key">4</button>
+            <button class="key">5</button>
+            <button class="key">6</button>
+            <button class="key">7</button>
+            <button class="key">8</button>
+            <button class="key">9</button>
+            <button onclick="clearAll()" class="clear-all" style="grid-row: 2/4;">CA</button>
+            <button class="key" style="grid-row: 4/4; grid-column: 2/4;">0</button>
+            <button onclick="setAValue()">Value of A</button>
+            <button onclick="setBValue()">Value of B</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

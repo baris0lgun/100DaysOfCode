@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Header</h1>
+        </div>
+
+        <div class="left">
+            <h1>left page</h1>
+        </div>
+        <div class="center">
+            <h1>Create account</h1>
+            <div id="input">
+                <div id="form">
+                    <p>Max length is 12 - min is 8</p>
+                    <input id="create-username" type="text" minlength="8" maxlength="12" value=""
+                        placeholder="Username">
+                    <p>Password</p>
+                    <input minlength="8" type="password" maxlength="12" name="password" id="create-password" value=""
+                        placeholder="Password">
+
+                    <button onclick="setUserData()">Create account</button>
+
+                </div>
+            </div>
+            <div>
+            </div>
+            <div>
+                <!-- <h1>3</h1> -->
+            </div>
+            <div>
+                <!-- <h1>4</h1> -->
+            </div>
+        </div>
+        <div class="right">
+            <h1>Right Page</h1>
+        </div>
+
+
+        <div class="bottom-center">
+            <div class="bottom-header">
+                <h1>Log In</h1>
+            </div>
+
+            <div id="form">
+                <input minlength="8" id="log-in-username" type="text" maxlength="12" value="" placeholder="Username">
+                <input minlength="8" id="log-in-password" maxlength="12" type="password" value="" name="password"
+                    id="password" placeholder="Password">
+                <button onclick="signIn()" id="sign-in">Sign in</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
