@@ -1,0 +1,87 @@
+.container {
+    background-color: #F0F2F5;
+    height: 796px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 266px);
+}
+
+#facebook-logo>img {
+    position: absolute;
+    left: 780px;
+    top: 50px;
+
+border: 2px solid gold;
+}
+
+#password {
+    position: relative;
+    top: 15px;
+}
+
+#login {
+    border-radius: 10px;
+    position: relative;
+    left: 10px;
+    bottom: 60px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row: 2/3;
+    width: 396px;
+    background-color: white;
+    border: 1px groove black;
+}
+
+#header {
+    font: 18px Arial, sans-serif;
+    position: relative;
+    left: 118px;
+    color: rgb(20, 16, 16);
+}
+
+.login-form>input {
+    border-radius: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 80%;
+    position: relative;
+    left: 30px;
+}
+
+.href {
+    position: relative;
+    top: 60px;
+    left: 70px;
+}
+
+.href > a {
+    color: royalblue;
+}
+
+.href > #forgotten {
+    position: relative;
+    right: 10px;
+}
+
+.href > #sign-up {
+    position: relative;
+    left: 10px;
+}
+
+#Log-in-button {
+    border-radius: 10px;
+    position: relative;
+    height: 40px;
+    top: 40px;
+    width: 81%;
+    border: 2px solid red;
+    left: 31px;
+    background-color: #1877F2;
+}
+
+#Log-in-button>h2 {
+    color: white;
+    position: relative;
+    left: 38%;
+    bottom: 14px;
+}
