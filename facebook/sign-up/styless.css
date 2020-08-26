@@ -1,5 +1,6 @@
 body {
-    background-color: #3B5998;
+    /* background-color: #3B5998; */
+    margin: 0px;
 }
 
 #header {
@@ -44,6 +45,7 @@ body {
 }
 
 .inputs {
+    font-size: 18px;
     margin: 3px;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -62,7 +64,33 @@ select {
 
 #fifth-line {
     display: grid;
-    grid-template-rows: repeat(3, 20px);
-    grid-template-columns: repeat();
-    border: 1px solid red;
+    grid-template-columns: repeat(4, 80px);
+
+}
+
+#sign-up-button {
+    display: inline-block;
+}
+
+#sign-up-button-button {
+    border-radius: 5px;
+    color: white;
+    font-size: 19px;
+    font-weight: bold !important;
+    padding: 7px 20px;
+    min-width: 194px;
+    background: linear-gradient(#67ae55, #578843);
+    background-color: #69a74e;
+    border: 1px solid;
+    border-color: #3b6e22 #3b6e22 #2c5115;
+    
+}
+
+h4 {
+    font-weight: 16px;
+}
+
+#header > a {
+    position: relative;
+    left: 70%;
 }

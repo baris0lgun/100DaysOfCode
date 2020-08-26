@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styless.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+</head>
+
+<body>
+    <div id="header">
+        <img src="logo/facebookLogo.png" alt="">
+        <a href="../sign-in/facebookLoginPage/login.html"><button>Log
+                In to Existing Account</button></a>
+    </div>
+    <div id="container">
+        <div id="form">
+            <div id="form-header">Create a new account</div>
+            <p>It's quick and easy.</p>
+            <div id="form-main">
+                <div id="first-line">
+                    <input id="first-name" class="inputs" value="" type="text" placeholder="First name">
+                    <input class="inputs" id="surname" value="" type="text" placeholder="Surname">
+                </div>
+                <div id="second-line">
+                    <input class="inputs" required id="email" id="full-size" type="text" placeholder="e-mail">
+                </div>
+                <div id="third-line">
+                    <input id="full-size" value="asd" class="inputs" type="text" placeholder="new password" data-password="">
+                </div>
+                <div id="fourth-line">
+                    <h4>Date of birth</h4>
+                    <select name="day" id="">
+                        <option value="1" selected="selected">day</option>
+                    </select>
+                    <select name="month" id="">
+                        <option value="1" selected="selected">month</option>
+                    </select>
+                    <select name="year" id="">
+                        <option value="1" selected="selected">year</option>
+                    </select>
+                </div>
+                <h3 style="font-size: 16px;">Gender</h3>
+                <div id="fifth-line">
+                    <div id="checkmale">
+                        <input type="checkbox" name="" id="">
+                        <p>male</p>
+                    </div>
+                    <div id="checkfamale">
+                        <input type="checkbox" name="" id="checkfamale">
+                        <p>famale</p>
+                    </div>
+                    <div id="checkcustom">
+                        <input type="checkbox" name="" id="">
+                        <p>custom</p>
+                    </div>
+
+                </div>
+                <div id="sign-up-button">
+                    <button onclick="inputValues()" id="sign-up-button-button">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript">
+    localStorage.setItem('age', "18")
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
