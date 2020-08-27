@@ -1,0 +1,100 @@
+body {
+    background-color: #18191A;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(1, 1fr);
+}
+
+#head-div {
+    border-bottom: 2px yellow;
+    align-items: center;
+    justify-items: center;
+    position: fixed;
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    height: 5vh;;
+    background-color: #242526;
+}
+
+#center-grid {
+    border: 1px solid black;
+}
+
+#right-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 2fr;
+}
+
+#logo>img {
+    position: relative;
+    top: 2px;
+}
+
+
+#search>input {
+    width: 12vw; 
+    background-color: #3A3B3C;
+    padding: 10px 10px;
+    border-radius: 20px;
+}
+
+#home {
+    position: relative;
+    grid-column: 7;
+}
+
+#friends {
+    position: relative;
+}
+
+
+#profile {
+    grid-column: 13;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#profile-name {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+}
+
+#username {
+    color: white;
+}
+
+#notification {
+   grid-column: 14;
+}
+
+.span-2 {
+    grid-column: span 2;
+}
+
+#left-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 1fr);
+    justify-content: center;
+    align-content: center;
+}
+
+#profile-name-surname {
+    color: white;
+    position: relative;
+    left: 4vw;
+    bottom: 4.5vh;
+}
+
+
+#covid {
+    position: relative;
+    left: 3px;
+    bottom: 2vh;
+}
