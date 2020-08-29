@@ -1,0 +1,82 @@
+body {
+    background-color: #18191A;
+}
+
+p {
+    margin-top: 5vh;
+    top: 2vh;
+    left: 3vw;
+    position: relative;
+    color: gray;
+}
+
+.borderphoto {
+    position: relative;
+    left: 4vw;
+    top: 2vh;
+    border: 10px solid black;
+}
+
+
+
+#paragraph {
+    width: 20vw;
+}
+
+#about {
+    background-color: #3A3B3C;
+    height: 100vh;
+    width: 25vw;
+    border: 2px solid;
+}
+
+.link {
+    margin-left: 20px;
+}
+
+#links {
+    margin-top: 10vh;
+    position: relative;
+    right: 23px;
+}
+
+#post {
+    position: relative;
+    right: 65px;
+    border-radius: 10px;
+}
+
+#center {
+    align-content: center;
+    justify-items: center;
+    position: relative;
+    width: 40vw;
+    left: 40vw;
+    bottom: 90vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    background-color: #28292a;
+    height: 60vh;
+    border-radius: 30px 15px;
+}
+
+#comment {
+    position: relative;
+    left: 2px;
+    background-color: #3A3B3C;
+    width: 567px;
+    height: 200px;
+    border-radius: 1px 50px;
+}
+
+#comment>input {
+    position: relative;
+    border-radius: 100px;
+    background-color: #28292a;
+    width: 80%;
+    margin: 0;
+    left: 9%;
+    top: 30%;
+    padding: 5px 10px;
+}
