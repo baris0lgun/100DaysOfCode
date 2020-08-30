@@ -24,59 +24,64 @@ p {
 }
 
 #about {
+    border-radius: 10px 12px;
     background-color: #3A3B3C;
     height: 100vh;
     width: 25vw;
     border: 2px solid;
 }
 
-.link {
-    margin-left: 20px;
-}
-
 #links {
-    margin-top: 10vh;
-    position: relative;
-    right: 23px;
+    width: 20vw;
+    margin-top: 7vh;
+    margin-left: 3vw;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 
 #post {
+    width: 40vw;
+    height: 50vh;
+    background-color: #3A3B3C;
     position: relative;
-    right: 65px;
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(15, 1fr);
+    left: 35vw;
+    bottom: 80vh;
+    justify-content: center;
+    align-content: center;
     border-radius: 10px;
 }
 
-#center {
-    align-content: center;
-    justify-items: center;
-    position: relative;
-    width: 40vw;
-    left: 40vw;
-    bottom: 90vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    background-color: #28292a;
-    height: 60vh;
-    border-radius: 30px 15px;
+#post > img {
+    background-color: rebeccapurple;
+    grid-column-start: 2;
+    grid-column-end: 15;
+    grid-row-start: 2;
+    grid-row-end: 9;
+    border: groove #18191A;
+    border-radius: 20px;
 }
 
-#comment {
-    position: relative;
-    left: 2px;
-    background-color: #3A3B3C;
-    width: 567px;
-    height: 200px;
-    border-radius: 1px 50px;
+#comment-like {
+    grid-column-start: 2;
+    grid-column-end: 15;
+    grid-row-start: 9;
+    grid-row-end: 10;
+    border: 1px gray groove;
+    border-radius: 5px 5px;
 }
 
-#comment>input {
+#comment-like > input {
     position: relative;
-    border-radius: 100px;
-    background-color: #28292a;
-    width: 80%;
-    margin: 0;
-    left: 9%;
-    top: 30%;
+    top: 1vh;
+    border-radius: 10px;
+    background-color: #18191A;
+    width: 50%;
     padding: 5px 10px;
+}
+
+#comment-like > #like {
+
 }
