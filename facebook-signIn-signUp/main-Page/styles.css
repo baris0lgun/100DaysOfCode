@@ -126,21 +126,19 @@ body {
     background-color: #242526;
 }
 
-#def1 {
-    position: relative;
-    left: 60px;
+#div-on-mind {
+    height: 10vh;
 }
 
-#def2 {
-    left: 30px;
-}
 
 #on-mind {
     position: relative;
     bottom: 20px;
     background-color: #4E4F50;
     border-radius: 30px;
-    padding: 10px 8vw;
+    width: 20vw;
+    height: 2vh;
+    padding: 4px 2vw;
 }
 
 #three-div {
@@ -150,8 +148,7 @@ body {
     grid-template-rows: 1fr;
     grid-template-columns: repeat(3, 1fr);
     position: relative;
-    bottom: 60px;
-    width: 40vw;
+    bottom: 100px;
     height: 5vh;
     background-color: #242526;
 }
@@ -173,14 +170,12 @@ body {
 #people {
     background-color: #242526;
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 3fr;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
 }
 
-.relative-top {
-    position: relative;
-    top: 50px;
-}
 
 .posts {
     align-content: center;
@@ -193,8 +188,18 @@ body {
     grid-row: span 2;
 }
 
-#tree {
-    position: relative;
-    left: 30%;
-    top: 100px;
+.start-row-2 {
+    grid-row-start: 2;
+}
+
+.def1 {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+}
+
+#fit-story {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

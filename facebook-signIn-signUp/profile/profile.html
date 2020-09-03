@@ -10,7 +10,8 @@
 
 <body>
     <div id="about">
-        <img class="borderphoto" src="./photos/business-man.jpg" alt="">
+        <div id="about-grid">
+            <div id="business-photo"><img class="borderphoto" src="./photos/business-man.jpg" alt=""></div>
         <div id="paragraph">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus maximus magna sit amet vulputate.
                 Nunc porttitor tortor non diam malesuada tempor. Mauris sed metus mauris. Integer sit amet magna eget
@@ -23,36 +24,43 @@
 
                 Ut non neque sem. Nulla in dui eget velit aliquam commodo. Sed velit tellus, auctor sit amet dictum non,
                 aliquet eget purus. Mauris blandit mi vitae pharetra blandit. Nam ac aliquet nulla. Phasellus luctus
-                consectetur varius. Sed ac nisl id diam accumsan viverra.
-
-                Cras a enim congue, malesuada enim sed, molestie nisi. Phasellus pharetra sodales lectus quis bibendum.
-                Nunc ac libero eu justo cursus sagittis. Class aptent taciti sociosqu ad litora torquent per conubia
-                nostra, per inceptos himenaeos. Nam rhoncus pretium consequat. Etiam sagittis rutrum mauris, at volutpat
-                nisl feugiat porta. Proin porta nisi mauris. Proin id nisl varius, pretium arcu a, elementum dui.
-                Integer a leo in libero auctor mollis. Donec facilisis, risus id semper pharetra, dolor dui ultricies
-                odio, vitae dapibus est velit in ex.</p>
+                consectetur varius. Sed ac nisl id diam accumsan viverra.</p>
         </div>
         <div id="links">
-            <a href=""><img src="./photos/link.png" alt=""></a>
-            <a href=""><img src="./photos/link.png" alt=""></a>
-            <a href=""><img src="./photos/facebookIcon.png" alt=""></a>
-            <a href=""><img src="./photos/link.png" alt=""></a>
-            <a href=""><img src="./photos/link.png" alt=""></a>
+            <a id="link" href=""><img src="./photos/link.png" alt=""></a>
+            <a id="link" href=""><img src="./photos/link.png" alt=""></a>
+            <a id="link" href="../main-Page/index.html"><img src="./photos/facebook-icon.png" alt=""></a>
+            <a id="link" href=""><img src="./photos/link.png" alt=""></a>
+            <a id="link" href=""><img src="./photos/link.png" alt=""></a>
+        </div>
         </div>
     </div>
 
     <div id="center">
         <div id="row-1">
             <img id="profile-photo" src="./photos/businiess-man-small.jpg" alt="">
-            <span id="profile-name"><h3>profile-name</h3></span>
+            <span id="profile-name">
+                <h3 id="profile-name-h3">profile-name</h3>
+            </span>
         </div>
         <div id="row-2">
-            <img src="./photos/images.jfif" alt="">
+            <img id="landscape-photo" src="./photos/images.jfif" alt="">
         </div>
         <div id="row-3">
-            
+            <div id="like">
+                <img src="./photos/like.png" alt=""><button>Like</button>
+            </div>
+
+            <div id="comment">
+                <img src="./photos/comment.PNG" alt=""> <button>comment</button>
+            </div>
+
+            <div id="share">
+                <img src="./photos/share.PNG" alt=""><button>Share</button>
+            </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
